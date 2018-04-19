@@ -1,10 +1,26 @@
 #include <iostream>
 #include <vector>
-
+//Xinrui Li
 using namespace std;
 
 //prototypes:
-
+bool isPositive(int number)
+{
+  if(number > 0)
+    return true;
+  else
+    return false;
+}
+void fillWith(vector<int> &array, int number)
+{
+  for(int i = 0; i < array.size(); i++)
+    array[i] = number;
+}
+void printVector(vector<int> array)
+{
+  for(int i = 0; i < array.size(); i++)
+     cout << array[i] << " ";
+}     
 
 /////DO NOT TOUCH/////
 int main()
